@@ -1,0 +1,92 @@
+#container-footer {
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    padding: 50px 0 10px 0;
+}
+
+/*modo-claro-footer*/
+.modo-claro-footer {
+    background-color: #FFF;
+}
+/*fim*/
+
+/*modo-escuro-footer*/
+.modo-escuro-footer {
+    background-color: #252525;
+}
+/*fim*/
+
+#container-footer p {
+    color: #8a8fa3;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+.logos-socias img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 5px;
+    transition:all 1s;
+    cursor: pointer;
+}
+
+.desenvolvedor {
+    border-top: 1px solid #ffffff0d;
+    width: 100vw;
+}
+
+.logos-socias img:hover {
+    transition:all 1s;
+    transform: scale(1.1);
+}
+
+#container-footer span {
+    color: #feb633;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition:all 1s;
+    font-size: 1rem;
+}
+
+#container-footer span:hover {
+    transition:all 1s;
+    font-size: 1.1rem;
+}
+
+
+@media (max-width: 768px) {
+
+    #container-footer p {
+        font-size: 0.9rem;
+        padding: 20px 10px;
+        width: 100%;
+    }
+
+    #container-footer span {
+        font-size: 0.9rem;
+    }
+    
+    #container-footer span:hover {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    #container-footer p {
+        font-size: 0.8rem;
+    }
+
+    #container-footer span {
+        font-size: 0.8rem;
+    }
+    
+    #container-footer span:hover {
+        font-size: 0.9rem;
+    }
+}

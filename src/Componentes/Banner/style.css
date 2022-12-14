@@ -1,0 +1,86 @@
+/*modo-claro-banner*/
+.modo-claro-banner {
+    background-color: #FFF;
+}
+/*fim*/
+
+/*modo-escuro-banner*/
+.modo-escuro-banner {
+    background-color: #252525;
+}
+/*fim*/
+
+.banner-texto {
+    color: #022144;
+    padding: 0 20px;
+    background-color: #fafbfc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+#banner {
+    height: 95vh;
+    padding-top: 90px;
+    display: flex;
+    position: relative;
+}
+
+.banner-texto h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.banner-texto p {
+    letter-spacing: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.banner-texto h2 {
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+#imagem-banner {
+    width: 50%;
+    background-image: url('../../assets/banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    object-fit: cover;
+}
+
+#imagem-banner img {
+    width:600px;
+    height: 100%;
+}
+
+#imagem-banner {
+    animation: go-back 3s infinite alternate;
+}
+
+@Keyframes go-back {
+    from {
+        transform:  translateY(20px);
+        transform: scale(0.9);
+    }
+    to {
+        transform: translateY(5px);
+        transform: scale(1);
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    #imagem-banner {
+        display: none;
+    }
+
+    .banner-texto {
+        width: 100%
+    }
+
+}

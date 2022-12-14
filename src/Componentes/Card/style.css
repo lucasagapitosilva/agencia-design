@@ -1,0 +1,70 @@
+/*card-modo-escuro*/
+.card-modo-escuro {
+    border: 1px solid #ffffff0d;
+}
+
+.card-modo-escuro h4 {
+    color: white;
+}
+
+.card-modo-escuro p {
+    color: #9F9F9F;
+}
+/*fim*/
+
+/*card-modo-claro*/
+.card-modo-claro{
+    border: 1px solid #edecec;
+}
+
+.card-modo-claro h4 {
+    color: #32333a;
+}
+
+.card-modo-claro p {
+    color: #8a8fa3;
+}
+/*fim*/
+
+#card {
+    width: 33%;
+    padding: 70px 30px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#card:hover {
+    background-color: #feb733;
+    transition: all 1s;
+}
+
+#card p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#card h4 {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.primeiroParagrafo {
+    margin-bottom: 5px;
+}
+
+.segundoParagrafo {
+    margin-bottom: 20px;
+}
+
+/*fim*/
+
+
+@media (max-width: 768px) {
+
+    #card {
+        width: auto;
+    }
+}
